@@ -1,0 +1,26 @@
+Getting the number pager
+
+https://www.drupal.org/node/1181966
+    Add a new field to your view.
+    In the search box type Global
+    Choose Global: View result counter
+    Click add and configure field
+    Uncheck the Create a label checkbox
+    Check Exclude from display
+    Optional: When using jquery.cycle in D7, you may have to add the following in the section Rewrite Results: check Output this field as a link ; in the field Link path, enter #slider. This solves the bug of the numbers being not clickable
+    Click Apply this display
+    Go to the slideshow settings
+    Enable the pager in the location of your choice
+    Choose fields for the pager type
+    Select the Global: View result counter as the field
+    Click Apply this display
+
+
+    .views-field-counter {
+    float: left;
+    padding: 0 5px 0 4px;
+}
+
+
+https://www.drupal.org/documentation/modules/views/add-ons
+
